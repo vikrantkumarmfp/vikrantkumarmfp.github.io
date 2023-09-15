@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Regitser 3</title>
+    </head>
+    <body>
+    <form method="get"> <!--action aur post ka bhi example diya tha video me-->
+        <label for = "f1"> First name : </label> <input type="text" id = "f1" name="firstname">
+        <br> <!--sabka name attribute isliye dale q ki url me aajaye for backend-->
+
+              <!--for and id ka use dekar connect kiya label aur input dono ko dono ka value 
+            same rakhna hai connect kliye jaise yha for and id dono me value male hai -->
+        <label for = "f2">Last name  :</label>  <input type="text" id = "f2" name="Lastname"> <br>
+
+        <label for = "email" >Email : </label> <input type="email" required name="Email" id ="email"> <br>
+
+        <label for = "pw"> Password :  </label>
+        <input type="password" name="Password" minlength="8" id = "pw"> <br>
+
+        Gender:<br>
+        <input type = "radio" name = "gender" value = "male" id="male" >
+        <label for = "male"> male </label><br>  
+        <!--for and id ka use dekar connect kiya label aur input dono ko dono ka value 
+            same rakhna hai connect kliye jaise yha for and id dono me value male hai -->
+
+        <input type = "radio" name = "gender" value = "female" id = "female">
+        <label for = "female">female</label><br>
+
+        <input type = "radio" name = "gender" value = "other" id = "other">
+         <label for = "other"> other</label><br>
+
+        pets: <br>
+        <input type = "checkbox" name = "cat" id = "ct"> <label for = "ct">cat</label><br>
+        <input type = "checkbox" name = "dog" id = "dg"> <label for="dg">dog</label> <br>
+        
+        <!-- again for and id use krke label ko input se kiye isliye connect 
+            kliye label ke sath likhne ki aadat dalni chhaiye-->
+
+        Cars : <br>
+        <select name = "cars"> <!--select ke bad name dalke cars isliye dale q ki url me aajaye-->
+            <option value="volvo">volvo</option>
+            <option value="audi">audi</option>
+        </select> <br>
+              <input type="submit" value="Regitser!">
+              <input type="reset">
+    </form>
+    
+</body>
+</html>
